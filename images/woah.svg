@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="Körper" transform="matrix(1.18848,0,0,1.1489,-73.42,-61.06)">
+        <ellipse cx="313.846" cy="314.266" rx="240.42" ry="247.972" style="fill:rgb(255,239,81);stroke:black;stroke-width:25.67px;"/>
+    </g>
+    <g id="linkesAUge" transform="matrix(0.0217284,0.999764,-0.999764,0.0217284,398.387,35.0983)">
+        <g id="linkesAuge" transform="matrix(0.90184,0,0,0.84375,10.2244,25.6993)">
+            <ellipse cx="189.65" cy="231.608" rx="68.392" ry="67.133"/>
+        </g>
+        <ellipse cx="169.091" cy="204.755" rx="20.979" ry="21.818" style="fill:white;"/>
+    </g>
+    <g id="rechtesAuge" transform="matrix(0.804084,-0.594515,0.594515,0.804084,-48.9273,293.765)">
+        <g id="rechtesAuge1" serif:id="rechtesAuge" transform="matrix(0.90184,0,0,0.84375,250.224,25.6993)">
+            <ellipse cx="189.65" cy="231.608" rx="68.392" ry="67.133"/>
+        </g>
+        <g transform="matrix(1,0,0,1,240,0)">
+            <ellipse cx="169.091" cy="204.755" rx="20.979" ry="21.818" style="fill:white;"/>
+        </g>
+    </g>
+    <g id="Mund" transform="matrix(1,0,0,1.29535,-118.322,-132.074)">
+        <g id="Mund1" serif:id="Mund" transform="matrix(-0.431378,0.00121536,-0.00230815,-0.819249,542.14,729.139)">
+            <ellipse cx="293.706" cy="404.895" rx="211.049" ry="88.531" style="fill:rgb(255,110,152);stroke:black;stroke-width:37.05px;"/>
+        </g>
+        <g transform="matrix(0.974232,-0.0425726,0.0330253,0.755752,-5.71108,147.963)">
+            <ellipse cx="417.902" cy="322.657" rx="72.587" ry="48.252" style="fill:white;"/>
+        </g>
+    </g>
+    <g id="Augenbraue" transform="matrix(-0.510521,0.0550927,6.82222,63.2187,-709.355,-9283.86)">
+        <ellipse cx="196.783" cy="148.112" rx="83.916" ry="0.42"/>
+    </g>
+    <g id="Augenbraue1" serif:id="Augenbraue" transform="matrix(-0.459958,0.0559146,7.67329,63.121,-671.37,-9265.18)">
+        <ellipse cx="196.783" cy="148.112" rx="83.916" ry="0.42"/>
+    </g>
+</svg>

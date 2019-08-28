@@ -1,0 +1,133 @@
+body {
+  background-color: rgb(72, 147, 217);
+}
+
+#navbar {
+  background-color: rgb(48, 75, 100);
+  padding-bottom: 15px;
+}
+
+#restartButton {
+  background-color: rgb(72, 147, 217);
+  color: #ffffff;
+  width: 20%;
+  margin-left: 3%;
+  font-size: 120%;
+  border-radius: 8px;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 2px;
+  margin-top: 1%;
+  padding: 1%;
+}
+
+#restartButton:hover {
+  background-color: rgb(200, 224, 246);
+}
+
+#scorebar {
+  background-color: rgb(72, 147, 217);
+  padding: 1%;
+  border-radius: 8px;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 2px;
+  display: inline-table;
+  margin-left: 2%;
+  margin-top: 1%;
+  width: 45%;
+}
+
+label {
+  font-weight: bold;
+  font-size: 150%;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+#try {
+  color: lemonchiffon;
+}
+
+#tryText {
+  color: lemonchiffon;
+  margin-left: 0%;
+  font-size: 100%;
+}
+
+#found {
+  color: lightgreen;
+}
+
+#foundText {
+  color: lightgreen;
+  margin-left: 0%;
+  font-size: 100%;
+}
+
+#score {
+  color: lightcoral;
+}
+
+#scoreText {
+  color: lightcoral;
+  margin-left: 0%;
+  font-size: 100%;
+}
+
+#playPanel {
+  width: 100%;
+  background-color: burlywood;
+  margin-top: 1%;
+  border-style: dashed;
+  border-color: gray;
+  border-width: 3px;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
+.card, .cardFront {
+  display: inline-block;
+  border-color: #ffffff;
+  border-style: solid;
+  border-radius: 8%;
+  height: 125px;
+  width: 80px;
+  margin-left: 5%;
+  margin-top: 1%;
+}
+
+.card {
+  background-image: linear-gradient(darkorange, red);
+}
+
+.card .icon {
+  opacity: 0;
+}
+
+.cardFront .icon {
+  display: block;
+  margin-top: 20%;
+  opacity: 1;
+}
+
+.card:hover {
+  opacity: 0.5;
+  transform: rotate(20deg);
+}
+
+.cardFront {
+  background-color: lightsalmon;
+}
+
+footer {
+  margin-top: 4%;
+  background-color: rgb(48, 75, 100);
+  padding: 20px;
+}
+
+span {
+  color: #ffffff;
+  font-size: 20px;
+  margin-left: 35%;
+}
