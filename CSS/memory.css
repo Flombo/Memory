@@ -303,6 +303,11 @@ span {
     margin-left: 10%;
   }
 
+  .card:hover {
+    opacity: 1;
+    transform: none;
+  }
+
   footer {
     margin-top: 4%;
   }
