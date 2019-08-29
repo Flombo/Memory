@@ -7,16 +7,16 @@ let foundText = 0;
 let scoreText = 0;
 let winDiv;
 let svgs = [
-    "../Memory/images/erschrocken.svg",
-    "../Memory/images/lächelnd.svg",
-    "../Memory/images/neutral.svg",
-    "../Memory/images/skeptisch.svg",
-    "../Memory/images/traurig.svg",
-    "../Memory/images/wütend.svg",
-    "../Memory/images/woah.svg",
-    "../Memory/images/fertig.svg",
-    "../Memory/images/übel.svg",
-    "../Memory/images/meckern.svg"
+    "images/erschrocken.svg",
+    "images/lächelnd.svg",
+    "images/neutral.svg",
+    "images/skeptisch.svg",
+    "images/traurig.svg",
+    "images/wütend.svg",
+    "images/woah.svg",
+    "images/fertig.svg",
+    "images/übel.svg",
+    "images/meckern.svg"
 ];
 
 let icons;

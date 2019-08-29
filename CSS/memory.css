@@ -86,13 +86,62 @@ label {
   padding-top: 1%;
 }
 
-.card, .cardFront {
+.win {
+  background-color: darkorange;
+  width: 60%;
+  height: 60%;
+  top: 15%;
+  left: 15%;
+  position: absolute;
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 8px;
+  display: none;
+}
+
+.win h1 {
+  margin-left: 35%;
+}
+
+.win button {
+  width: 30%;
+  height: 20%;
+  background-color: rgb(48, 75, 100);
+  color: #ffffff;
+  font-size: 140%;
+  margin-left: 35%;
+  border: solid;
+  margin-top: 10%;
+}
+
+.win button:hover {
+  background-color: rgb(200, 224, 246);
+}
+
+#shown {
+  display: initial;
+}
+
+.win h1,
+.win p {
+  color: #ffffff;
+}
+
+.win p {
+  font-size: 170%;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+.card,
+.cardFront {
   display: inline-block;
   border-color: #ffffff;
   border-style: solid;
   border-radius: 8%;
-  height: 125px;
-  width: 80px;
+  height: 100px;
+  width: 75px;
   margin-left: 5%;
   margin-top: 1%;
 }
@@ -121,7 +170,7 @@ label {
 }
 
 footer {
-  margin-top: 4%;
+  margin-top: 3%;
   background-color: rgb(48, 75, 100);
   padding: 20px;
 }
@@ -130,4 +179,136 @@ span {
   color: #ffffff;
   font-size: 20px;
   margin-left: 35%;
+}
+
+@media screen and (max-width: 1130px) {
+  #restartButton {
+    width: 25%;
+    font-size: 130%;
+    margin-top: 1%;
+    padding: 1%;
+  }
+
+  #scorebar {
+    margin-top: 2%;
+    width: 60%;
+  }
+
+  label {
+    font-size: 150%;
+    margin-left: 8%;
+    margin-right: 1%;
+    padding: 1%;
+  }
+
+  .card,
+  .cardFront {
+    height: 85px;
+    width: 70px;
+    margin-left: 5%;
+    margin-top: 1%;
+  }
+
+  .cardFront .icon {
+    margin-top: 25%;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  footer {
+    margin-top: 7%;
+  }
+
+  span {
+    font-size: 130%;
+    margin-left: 30%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #restartButton {
+    width: 25%;
+    font-size: 120%;
+    margin-top: 1%;
+    padding: 1%;
+  }
+
+  #scorebar {
+    margin-top: 3%;
+    width: 60%;
+  }
+
+  label {
+    font-size: 120%;
+    margin-left: 10%;
+    margin-right: 1%;
+    padding: 1%;
+  }
+
+  .card,
+  .cardFront {
+    height: 80px;
+    width: 65px;
+    margin-left: 5%;
+    margin-top: 1%;
+  }
+
+  .cardFront .icon {
+    margin-top: 25%;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  footer {
+    margin-top: 4%;
+  }
+
+  span {
+    font-size: 120%;
+    margin-left: 30%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #restartButton {
+    width: 25%;
+    font-size: 90%;
+    margin-top: 1%;
+    padding: 1%;
+  }
+
+  #scorebar {
+    margin-top: 3%;
+    width: 60%;
+  }
+
+  label {
+    font-size: 90%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 1%;
+  }
+
+  .card,
+  .cardFront {
+    height: 74px;
+    width: 60px;
+    margin-left: 5%;
+    margin-top: 1%;
+  }
+
+  .cardFront .icon {
+    margin-top: 25%;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  footer {
+    margin-top: 4%;
+  }
+
+  span {
+    font-size: 100%;
+    margin-left: 20%;
+  }
 }
