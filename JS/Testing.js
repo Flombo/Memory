@@ -6,6 +6,7 @@ let tryText = 0;
 let foundText = 0;
 let scoreText = 0;
 let winDiv;
+let winText;
 let svgs = [
     "images/erschrocken.svg",
     "images/lächelnd.svg",
@@ -34,23 +35,21 @@ function initIcons() {
     });
 }
 
-function createWinDiv(){
+function createWinDiv() {
     winDiv = document.createElement("div");
     winDiv.setAttribute("class", "win");
     winDiv.appendChild(createCongrat());
-    winDiv.appendChild(createWinText());
-    winDiv.appendChild(createWinButton());
     return winDiv;
 }
 
-function createWinText(){
-    let winText = document.createElement("p");
-    winText.innerHTML =  "You win with:" + tryText + " tries!"
-    + "your score is :" + scoreText + " Well done :)";
+function createWinText() {
+    winText = document.createElement("p");
+    winText.innerHTML = "You win with:" + tryText + " tries!" +
+        "your score is :" + scoreText + " Well done :)";
     return winText;
 }
 
-function createWinButton(){
+function createWinButton() {
     let winButton = document.createElement("button");
     winButton.textContent = "Close";
     winButton.addEventListener("mousedown", hideWinDiv);
@@ -58,8 +57,9 @@ function createWinButton(){
     return winButton;
 }
 
-function createCongrat(){
-    let congrat = document.createElement("h1");
+function createCongrat() {
+    let congrat = document.createElement("p");
+    congrat.setAttribute("id", "congrat");
     congrat.innerHTML = "Congratulation!";
     return congrat;
 }
@@ -71,6 +71,7 @@ function addButtonListener() {
 }
 
 function restart() {
+    hideWinDiv();
     resetTriesText();
     resetFoundText();
     resetScoreText();
@@ -79,14 +80,14 @@ function restart() {
     resetBackCards();
 }
 
-function resetBackCards(){
+function resetBackCards() {
     let backCards = Array.from(document.getElementsByClassName('card'));
     for (let back of backCards) {
         setRandomIcon(back);
     }
 }
 
-function resetFrontCards(){
+function resetFrontCards() {
     let frontCards = Array.from(document.getElementsByClassName('cardFront'));
     for (let card of frontCards) {
         switchCardsToBack(card);
@@ -152,19 +153,19 @@ function comparePicks() {
     }
 }
 
-function resetScoreText(){
+function resetScoreText() {
     let score = document.getElementById("scoreText");
     scoreText = 0;
     score.textContent = scoreText;
 }
 
-function setScoreText(){
+function setScoreText() {
     let score = document.getElementById("scoreText");
     scoreText += (foundText * 20) - tryText * 5;
     score.textContent = scoreText;
 }
 
-function resetFoundText(){
+function resetFoundText() {
     let found = document.getElementById("foundText");
     foundText = 0;
     found.textContent = foundText;
@@ -178,13 +179,17 @@ function setFoundText() {
     checkIfAllfound();
 }
 
-function checkIfAllfound(){
+function checkIfAllfound() {
     if (foundText === 10) {
         showWinDiv();
     }
 }
 
 function showWinDiv() {
+    if (winText == null) {
+        winDiv.appendChild(createWinText());
+        winDiv.appendChild(createWinButton());
+    }
     winDiv.setAttribute("id", "shown");
 }
 
@@ -196,7 +201,7 @@ function switchCardsToBack(card) {
     card.setAttribute("class", "card");
 }
 
-function resetTriesText(){
+function resetTriesText() {
     tryText = 0;
     let tries = document.getElementById('tryText');
     tries.textContent = tryText;

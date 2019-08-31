@@ -100,8 +100,10 @@ label {
   display: none;
 }
 
-.win h1 {
+.win #congrat {
   margin-left: 35%;
+  font-size: 200%;
+  font-weight: bold;
 }
 
 .win button {
@@ -112,7 +114,7 @@ label {
   font-size: 140%;
   margin-left: 35%;
   border: solid;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .win button:hover {
@@ -123,7 +125,7 @@ label {
   display: initial;
 }
 
-.win h1,
+.win #congrat,
 .win p {
   color: #ffffff;
 }
@@ -287,6 +289,29 @@ span {
     margin-left: 1%;
     margin-right: 1%;
     padding: 1%;
+  }
+
+  .win {
+    width: 60%;
+    height: 30%;
+    left: 15%;
+  }
+
+  .win #congrat {
+    margin-left: 20%;
+    font-weight: bold;
+    font-size: 115%;
+  }
+
+  .win button {
+    width: 25%;
+    height: 15%;
+    font-size: 90%;
+  }
+
+  .win p {
+    font-size: 90%;
+    margin-left: 4%;
   }
 
   .card,
