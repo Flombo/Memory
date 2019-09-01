@@ -7,6 +7,12 @@ let foundText = 0;
 let scoreText = 0;
 let winDiv;
 let winText;
+let icons;
+let success = new Audio("music/Success.wav");
+let rightChoice = new Audio("music/correctChoice.wav");
+let wrongChoice = new Audio("music/wrongChoice.wav");
+let click = new Audio("music/click.wav");
+let cardFlip = new Audio("music/cardFlip.wav");
 let svgs = [
     "../Memory/images/erschrocken.svg",
     "../Memory/images/lächelnd.svg",
@@ -19,8 +25,6 @@ let svgs = [
     "../Memory/images/übel.svg",
     "../Memory/images/meckern.svg"
 ];
-
-let icons;
 
 initIcons();
 
@@ -71,6 +75,7 @@ function addButtonListener() {
 }
 
 function restart() {
+    click.play();
     hideWinDiv();
     resetTriesText();
     resetFoundText();
@@ -128,9 +133,11 @@ function clickHandler() {
 function checkPicks(card) {
     if (firstPick === null) {
         firstPick = card;
+        cardFlip.play();
     }
     if (firstPick !== card && secondPick === null) {
         secondPick = card;
+        cardFlip.play();
     }
     comparePicks();
 }
@@ -139,10 +146,12 @@ function comparePicks() {
     if (firstPick !== null && secondPick !== null) {
         window.setTimeout(() => {
             if (firstPick.getAttribute("name") === secondPick.getAttribute("name")) {
+                rightChoice.play();
                 setFoundText();
                 firstPick = null;
                 secondPick = null;
             } else {
+                wrongChoice.play();
                 switchCardsToBack(firstPick);
                 switchCardsToBack(secondPick);
                 firstPick = null;
@@ -181,6 +190,7 @@ function setFoundText() {
 
 function checkIfAllfound() {
     if (foundText === 10) {
+        success.play();
         showWinDiv();
     }
 }
@@ -194,10 +204,12 @@ function showWinDiv() {
 }
 
 function hideWinDiv() {
+    click.play();
     winDiv.setAttribute("id", "");
 }
 
 function switchCardsToBack(card) {
+    cardFlip.play();
     card.setAttribute("class", "card");
 }
 

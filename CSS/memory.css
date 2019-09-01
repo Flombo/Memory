@@ -98,6 +98,10 @@ label {
   border-width: 8px;
   border-radius: 8px;
   display: none;
+  transition: ease-in-out;
+  transition-duration: 0.4s;
+  transition-property: display;
+  z-index: 2;
 }
 
 .win #congrat {
@@ -136,6 +140,14 @@ label {
   margin-top: 10%;
 }
 
+.card {
+  perspective: 1000px;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
 .card,
 .cardFront {
   display: inline-block;
@@ -148,18 +160,24 @@ label {
   margin-top: 1%;
 }
 
+.cardFront {
+  transform: rotateY(180deg);
+}
+
 .card {
   background-image: linear-gradient(darkorange, red);
 }
 
 .card .icon {
   opacity: 0;
+  transform: none;
 }
 
 .cardFront .icon {
   display: block;
   margin-top: 20%;
   opacity: 1;
+  transform: none;
 }
 
 .card:hover {
