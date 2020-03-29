@@ -1,4 +1,10 @@
+html{
+  margin: 0;
+  width: 100%;
+}
 body {
+  margin: 0;
+  width: 100%;
   background-color: rgb(72, 147, 217);
 }
 
@@ -76,14 +82,15 @@ label {
 }
 
 #playPanel {
-  width: 100%;
+  width: 95%;
   background-color: burlywood;
-  margin-top: 1%;
+  margin-top: 2%;
   border-style: dashed;
   border-color: gray;
   border-width: 3px;
   padding-bottom: 1%;
   padding-top: 1%;
+  margin-left: 2.5%;
 }
 
 .win {
